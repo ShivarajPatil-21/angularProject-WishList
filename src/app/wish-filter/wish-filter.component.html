@@ -1,0 +1,16 @@
+<div class="col-sm-2">
+    <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+    <select class="form-select" 
+      [(ngModel)]="listFilter" 
+      (ngModelChange)="updateFilter($event)"
+      id="autoSizingSelect"
+      
+      >
+
+      <option selected>Choose...</option>
+      <option value="0">All</option>
+      <option value="1">Unfullfilled</option>
+      <option value="2">Fullfilled</option>
+
+    </select>
+</div>

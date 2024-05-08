@@ -1,0 +1,22 @@
+<form>
+    <div class="input-group mb-3 align-items-center justify-content-center mt-3 ">
+      <div class="col-sm-7 d-flex  ">
+        <input type="text"
+        name="new-wish-text"
+         class="form-control 
+         w-6" 
+         placeholder="Name" 
+         aria-label="Recipient's username" 
+         aria-describedby="button-addon2" 
+         [(ngModel)]="newWishText"
+         >
+        <button 
+        class="btn btn-outline-secondary" 
+        type="button" 
+        id="button-addon2"
+
+        (click)="$event.preventDefault(); addNewWish()"
+        >Button</button>
+      </div>       
+    </div>
+  </form>
